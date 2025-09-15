@@ -1,16 +1,14 @@
+// SkillsList.jsx
 import React from "react";
+import { Card, CardContent, Typography, Box } from "@mui/material";
 
 export default function SkillsList({ skills }) {
-  return (
-    <div>
-      <h2 className="text-xl font-bold">Skills</h2>
-      <ul className="list-disc pl-5">
-        {skills.map((skill, index) => (
-          <li key={index}>
-            {skill.name} - {skill.description}
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+  return skills.map((skill, i) => (
+    <Card key={i} sx={{ mb: 2 }}>
+      <CardContent>
+        <Typography variant="h6">{skill.name}</Typography>
+        <Typography variant="body2">{skill.details}</Typography>
+      </CardContent>
+    </Card>
+  ));
 }

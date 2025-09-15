@@ -1,11 +1,18 @@
 import React from "react";
+import { Card, CardContent, Typography } from "@mui/material";
 
 export default function ProfileCard({ profile }) {
   return (
-    <div className="bg-white p-6 rounded-xl shadow">
-      <h1 className="text-2xl font-bold">{profile.name}</h1>
-      <h2 className="text-lg text-gray-600">{profile.title}</h2>
-      <p className="mt-3 text-gray-800">{profile.summary}</p>
-    </div>
+    <Card sx={{ backgroundColor: "#e3f2fd" }}>
+      <CardContent>
+        <Typography variant="h5" color="primary" gutterBottom>
+          {profile.name}
+        </Typography>
+        <Typography variant="subtitle1" gutterBottom>
+          {profile.title}
+        </Typography>
+        <Typography variant="body1">{profile.summary}</Typography>
+      </CardContent>
+    </Card>
   );
 }
