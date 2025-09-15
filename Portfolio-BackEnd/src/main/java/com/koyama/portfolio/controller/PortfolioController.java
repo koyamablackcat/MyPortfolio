@@ -24,7 +24,7 @@ public class PortfolioController {
             "location", "Tokyo, Japan",
             "email", "koyama@example.com",
             "phone", "+81 90-1234-5678",
-            "avatar", "https://example.com/images/avatar.jpg",
+            "avatar", "http://localhost:8080/images/avatar.jpg",
             "linkedin", "https://linkedin.com/in/koyama",
             "github", "https://github.com/koyama"
         );
