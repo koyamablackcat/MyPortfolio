@@ -1,4 +1,3 @@
-// SkillsList.jsx
 import React from "react";
 import { Card, CardContent, Typography, Box } from "@mui/material";
 
@@ -7,7 +6,10 @@ export default function SkillsList({ skills }) {
     <Card key={i} sx={{ mb: 2 }}>
       <CardContent>
         <Typography variant="h6">{skill.name}</Typography>
-        <Typography variant="body2">{skill.details}</Typography>
+		
+        <Typography variant="body2">{skill.description}</Typography>
+
+		<Typography variant="body2">{skill.imageUrl}</Typography>
       </CardContent>
     </Card>
   ));

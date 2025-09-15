@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ProfileCard from "./components/ProfileCard";
 import SkillsList from "./components/SkillsList";
 import ProjectsList from "./components/ProjectsList";
-import { Container, Typography, Box } from "@mui/material";
+import { Container, Typography, Box, Divider} from "@mui/material";
 
 export default function App() {
   const [profile, setProfile] = useState(null);
@@ -25,30 +25,30 @@ export default function App() {
 
   return (
     <Container maxWidth="md" sx={{ py: 5 }}>
-      <Typography variant="h3" align="center" color="primary" gutterBottom>
-        My Portfolio
-      </Typography>
-
       {/* Profile Section */}
       <Box mb={5}>
         {profile && <ProfileCard profile={profile} />}
       </Box>
-
-      {/* Skills Section */}
-      <Box mb={5}>
-        <Typography variant="h5" color="secondary" gutterBottom>
-          Skills
-        </Typography>
-        <SkillsList skills={skills} />
-      </Box>
-
-      {/* Projects Section */}
-      <Box>
-        <Typography variant="h5" color="secondary" gutterBottom>
-          Projects
-        </Typography>
-        <ProjectsList projects={projects} />
-      </Box>
+	  <Box display="flex" alignItems="flex-start" justifyContent="space-between">
+	      {/* Skills Section */}
+	      <Box mb={5}>
+	        <Typography variant="h5" color="secondary" gutterBottom>
+	          Skills
+	        </Typography>
+	        <SkillsList skills={skills} />
+	      </Box>
+		  
+		  {/* Divider đứng */}
+	      <Divider orientation="vertical" flexItem sx={{ mx: 2 }} />
+	
+	      {/* Projects Section */}
+	      <Box>
+	        <Typography variant="h5" color="secondary" gutterBottom>
+	          Projects
+	        </Typography>
+	        <ProjectsList projects={projects} />
+	      </Box>
+	 	</Box>
     </Container>
   );
 }
