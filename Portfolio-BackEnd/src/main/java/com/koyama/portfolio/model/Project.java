@@ -4,8 +4,8 @@ public class Project {
     private String name;
     private String description;
     private String tech;
-    private String imageUrl; // thêm trường ảnh
-    private String link;     // thêm trường link GitHub/demo
+    private String imageUrl;
+    private String link;
 
     public Project(String name, String description, String tech, String imageUrl, String link) {
         this.name = name;

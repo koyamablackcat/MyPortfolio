@@ -18,14 +18,14 @@ public class PortfolioController {
     @GetMapping("/profile")
     public Map<String, String> getProfile() {
         return Map.of(
-            "name", "Koyama Gin",
+            "name", "Đặng Văn Sơn",
+            "nickname", "Koyama Gin",
             "title", "BrSE / Java Developer",
-            "summary", "Vị trí giao tiếp tiếng Nhật thường xuyên, với 3 năm kinh nghiệm FileMaker. Chuyên gia phát triển ứng dụng doanh nghiệp, tích hợp hệ thống và tối ưu backend.",
+            "summary", "Kĩ sư cầu nối với 3 năm kinh nghiệm phát triển hệ thống cho doanh nghiệp",
             "location", "TP. Hồ Chí Minh, Việt Nam",
             "email", "sondangvan1995@gmail.com",
-            "phone", "+84 77 385 9046",
+            "phone", "+84-77-385-9046",
             "avatar", "http://localhost:8080/images/avatar.jpg", //local test
-            // "linkedin", "https://linkedin.com/in/koyama",
             "github", "https://github.com/koyamablackcat"
         );
     }
