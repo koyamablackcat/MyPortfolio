@@ -10,7 +10,7 @@ import java.util.Map;
 
 import com.koyama.portfolio.model.*;
 
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "http://localhost:5173") //local test
 @RestController
 @RequestMapping("/api")
 public class PortfolioController {
@@ -20,13 +20,13 @@ public class PortfolioController {
         return Map.of(
             "name", "Koyama Gin",
             "title", "BrSE / Java Developer",
-            "summary", "3 năm kinh nghiệm với Java, Spring Boot, ReactJS và MySQL. Chuyên gia phát triển ứng dụng doanh nghiệp, tích hợp hệ thống và tối ưu backend.",
-            "location", "Tokyo, Japan",
-            "email", "koyama@example.com",
-            "phone", "+81 90-1234-5678",
-            "avatar", "http://localhost:8080/images/avatar.jpg",
-            "linkedin", "https://linkedin.com/in/koyama",
-            "github", "https://github.com/koyama"
+            "summary", "Vị trí giao tiếp tiếng Nhật thường xuyên, với 3 năm kinh nghiệm FileMaker. Chuyên gia phát triển ứng dụng doanh nghiệp, tích hợp hệ thống và tối ưu backend.",
+            "location", "TP. Hồ Chí Minh, Việt Nam",
+            "email", "sondangvan1995@gmail.com",
+            "phone", "+84 77 385 9046",
+            "avatar", "http://localhost:8080/images/avatar.jpg", //local test
+            // "linkedin", "https://linkedin.com/in/koyama",
+            "github", "https://github.com/koyamablackcat"
         );
     }
 
@@ -61,8 +61,8 @@ public class PortfolioController {
                 "Portfolio",
                 "Website cá nhân giới thiệu profile, kỹ năng và các dự án đã thực hiện, tối ưu trải nghiệm người dùng.",
                 "Spring Boot, ReactJS, Material UI",
-                "https://example.com/images/portfolio.png",
-                "https://github.com/koyama/portfolio"
+                "https://github.com/koyamablackcat/MyPortfolio/blob/main/Portfolio-BackEnd/src/main/resources/static/images/avatar.jpg",
+                "https://github.com/koyamablackcat/portfolio"
             )
         );
     }
